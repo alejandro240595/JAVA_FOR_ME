@@ -1,17 +1,16 @@
 
 package ejemplo_1;
 
-/**
- *
- * @author Alumno
- */
+import pe.egcc.app.view.SumaView;
+
+
 public class Ejemplo_1 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+   
+    public static void main(String[] args) 
+    {
+        SumaView obj = new SumaView();
+        obj.setVisible(true);
     }
     
 }
