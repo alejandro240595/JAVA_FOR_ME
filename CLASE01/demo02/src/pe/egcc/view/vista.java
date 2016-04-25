@@ -11,6 +11,8 @@ public class vista extends javax.swing.JFrame {
     public vista() {
         initComponents();
     }
+    
+   
 
 
     @SuppressWarnings("unchecked")
@@ -73,6 +75,7 @@ public class vista extends javax.swing.JFrame {
         resultado result = new resultado(this, rootPaneCheckingEnabled);
         String rpta = "Importe: " + n1 + "\n" + "Impuesto: " +  imp + "\n" + "total: " + imp2;
         JOptionPane.showMessageDialog(rootPane, rpta);
+        Importe.setText("panda");
     }//GEN-LAST:event_btn_procesarActionPerformed
 
  
