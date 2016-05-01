@@ -2,6 +2,7 @@
 
 package vista;
 
+import clase.clase;
 import clase.pagoService;
 import javax.swing.JOptionPane;
 
@@ -88,16 +89,17 @@ public class Pago extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_procesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_procesarActionPerformed
-        double a = Integer.parseInt(txt_dias.getText());
-        double b = Integer.parseInt(txt_hdia.getText());
-       double c = Integer.parseInt(txt_pagHora.getText());
-        pagoService service = new pagoService();
-        double ing = service.procesar(a, b, c);
-        double rent = service.renta(ing);
-        double total = ing +  rent;
+        int horasDia=Integer.parseInt(txt_hdia.getText());
+        int dia = Integer.parseInt(txt_dias.getText());
+        int pagoHora = Integer.parseInt(txt_pagHora.getText());
         
-        String rpta = "Ingreso: " + ing + "\n" + "Renta: " + rent + "\n" + "Neto: " + total;
+        clase obj = new clase(horasDia, dia, pagoHora);
+        pagoService obj2 = new pagoService();
+        obj2.procesar(obj);
+        String rpta = "Ingreso: " +  obj.getIngreso() + "\n" + "renta:" + obj.getRenta() + "\n" + "neto : " + obj.getNeto();
         JOptionPane.showMessageDialog(rootPane, rpta);
+        
+        
         
         
     }//GEN-LAST:event_btn_procesarActionPerformed

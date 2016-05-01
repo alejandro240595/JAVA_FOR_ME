@@ -5,18 +5,29 @@ package clase;
 public class pagoService 
 
 {
-    public double procesar(double n1, double n2, double n3)
+    public void procesar(clase pagoDATO )
     {
-        double res=n1*n2*n3;
-        return res;
+        double r;
+        double v = (pagoDATO.getDia())*(pagoDATO.getHoraxdia())*(pagoDATO.getPagoxdia());
+        pagoDATO.setIngreso(v);
         
+        if(v>1500)
+        {
+            r=0.08*v;
+            pagoDATO.setRenta(r);
+        }
+        else
+        {
+            r=0;
+            pagoDATO.setRenta(r);
+        }
+        
+        double n=v-r;
+        pagoDATO.setNeto(n);
+    
     }
     
-    public double renta(double res)
-    {
-        double rent = res*0.08;
-        return rent;
-    }
+
     
     
 }

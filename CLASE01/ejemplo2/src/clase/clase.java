@@ -4,14 +4,21 @@ package clase;
 
 public class clase 
 {
-    double horaxdia;
-    double dia;
-    double pagoxdia;
+    private double horaxdia;
+     private double dia;
+     private double pagoxdia;
+     private double ingreso;
+     private double renta;
+     private double neto;
+
+    public clase() {
+            
+    }
 
     public clase(double horaxdia, double dia, double pagoxdia) {
-        this.horaxdia = 0;
-        this.dia = 0;
-        this.pagoxdia = 0;
+        this.horaxdia = horaxdia;
+        this.dia = dia;
+        this.pagoxdia = pagoxdia;
     }
 
     public double getHoraxdia() {
@@ -37,7 +44,34 @@ public class clase
     public void setPagoxdia(double pagoxdia) {
         this.pagoxdia = pagoxdia;
     }
+
+    public double getIngreso() {
+        return ingreso;
+    }
+
+    public void setIngreso(double ingreso) {
+        this.ingreso = ingreso;
+    }
+
+    public double getRenta() {
+        return renta;
+    }
+
+    public void setRenta(double renta) {
+        this.renta = renta;
+    }
+
+    public double getNeto() {
+        return neto;
+    }
+
+    public void setNeto(double neto) {
+        this.neto = neto;
+    }
+
     
-    
-    
+     
+     
+
+   
 }
