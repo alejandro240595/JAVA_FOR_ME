@@ -1,0 +1,3 @@
+sesion dos 
+
+probar en show message dialog this, rootpane y btn procesar 
