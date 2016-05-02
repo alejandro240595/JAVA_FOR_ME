@@ -1,15 +1,14 @@
 
 
-package pe.egcc.model;
+package pe.egcc.app;
 
 
-public class MyMath {
+public class ClasePrincipal {
 
-    
+ 
     public static void main(String[] args) 
     {
-       
+      
     }
-    
     
 }
