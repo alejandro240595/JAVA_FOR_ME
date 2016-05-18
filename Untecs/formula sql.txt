@@ -1,0 +1,31 @@
+
+// listar los clientes 
+SELECT idCliente, Nombre, Telefono, Distrito
+FROM cliente, distrito
+WHERE distrito.iddistrito = cliente.iddistrito
+LIMIT 0 , 30 
+
+// listar los clientes segun su distrito en este cxaso solo los de los olivos 
+SELECT Nombre,Distrito				//
+FROM cliente, distrito				
+WHERE distrito.iddistrito = cliente.iddistrito	
+AND distrito.Distrito='Los Olivos'		
+
+
+// listar los clientes segun su codigo distrito en este caso solo los de ves
+
+
+SELECT Nombre,Distrito				
+FROM cliente, distrito				
+WHERE distrito.iddistrito = cliente.iddistrito	
+AND distrito.iddistrito='5'		
+
+//Seleccionar Los clientes cuyo apellido materno sea alva
+SELECT *
+FROM cliente
+WHERE Amaterno = 'Torres'
+
+//Seleccionar los clientes donde el primer caracter del nombre sea 'A'
+SELECT *
+FROM cliente
+WHERE Nombre like 'A%'
