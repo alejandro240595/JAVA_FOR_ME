@@ -1,0 +1,30 @@
+	
+	Base de datos en sql server
+	
+	archivos fisicos: *.MDF, *.LDF
+
+	Ejemplo:
+	
+	La BD prueba, genera:
+	-Prueba.MDF
+	-Prueba_log.LDF
+
+	SQL Server managment Studio
+
+	create table Tproducto
+	(codproducto varchar(3) primary key,
+	descripcion varchar(30),
+	marca varchar(2),
+	categoria varchar(2),
+	stock int,
+	precio numeric(8"entero",2"decimales"))		//tabla principal
+	
+	create table Tmarca
+	(codmarca varchar(2) primary key,
+	nombre varchar(30))				//tabla secundaria
+
+	create table TCategoria
+	(codcategoria varchar(2) primary key,
+	nombre varchar(30))				//tabla secundaria
+
+//Esto sirve para evitar las redundancias explicado en excel recuerda
