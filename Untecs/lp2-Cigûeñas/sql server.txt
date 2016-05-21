@@ -45,4 +45,10 @@ Relacionar tablas
 	references Tmarca(codmarca)
 
 	NOTA SE ALTERA LA TABLA QUE TIENE EL FK
+
+
+alter table Tcategoria drop column observacion // eliminar columna
+alter table Tcategoria add observacion varchar(50) // añadir columna
+	
+
 	
