@@ -28,3 +28,21 @@
 	nombre varchar(30))				//tabla secundaria
 
 //Esto sirve para evitar las redundancias explicado en excel recuerda
+
+Relacionar tablas 
+
+	alter table TABLA 						//ALTERAR LA TABLA, AGREGAR CAMPOS , CAMBIAR LA RELACION,ETC
+	add constraint NOMBRE_RELACION					// puede ser cualquiera suirve para saber el tipi de relacion
+	foreign key (Campo_Foraneo)
+	references TABLA_CON_QUE_SE_RELACIONA(LLAVE_PRIMARIA)
+	
+
+	Ejemplo: Relacion TPRODUCTO ---------- TMARCA
+
+	alter table Tproducto
+	add constraint FK_producto_marca
+	foreign key (marca)
+	references Tmarca(codmarca)
+
+	NOTA SE ALTERA LA TABLA QUE TIENE EL FK
+	
