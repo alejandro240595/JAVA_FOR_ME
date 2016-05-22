@@ -2,17 +2,17 @@
 
 package pe.egcc.model;
 
-import pe.AngelesDelCielo.lib.MyMath;
+import pe.egcc.model.mymath.myMath;
 
 
 public class Proceso 
 
 {
-    private  MyMath mate;
+    private  myMath mate;
 
     public Proceso() 
     {
-      mate = new MyMath();
+      mate = new myMath();
     }
     
     public int factorial(int n)
