@@ -1,0 +1,54 @@
+	
+	Base de datos en sql server
+	
+	archivos fisicos: *.MDF, *.LDF
+
+	Ejemplo:
+	
+	La BD prueba, genera:
+	-Prueba.MDF
+	-Prueba_log.LDF
+
+	SQL Server managment Studio
+
+	create table Tproducto
+	(codproducto varchar(3) primary key,
+	descripcion varchar(30),
+	marca varchar(2),
+	categoria varchar(2),
+	stock int,
+	precio numeric(8"entero",2"decimales"))		//tabla principal
+	
+	create table Tmarca
+	(codmarca varchar(2) primary key,
+	nombre varchar(30))				//tabla secundaria
+
+	create table TCategoria
+	(codcategoria varchar(2) primary key,
+	nombre varchar(30))				//tabla secundaria
+
+//Esto sirve para evitar las redundancias explicado en excel recuerda
+
+Relacionar tablas 
+
+	alter table TABLA 						//ALTERAR LA TABLA, AGREGAR CAMPOS , CAMBIAR LA RELACION,ETC
+	add constraint NOMBRE_RELACION					// puede ser cualquiera suirve para saber el tipi de relacion
+	foreign key (Campo_Foraneo)
+	references TABLA_CON_QUE_SE_RELACIONA(LLAVE_PRIMARIA)
+	
+
+	Ejemplo: Relacion TPRODUCTO ---------- TMARCA
+
+	alter table Tproducto
+	add constraint FK_producto_marca
+	foreign key (marca)
+	references Tmarca(codmarca)
+
+	NOTA SE ALTERA LA TABLA QUE TIENE EL FK
+
+
+alter table Tcategoria drop column observacion // eliminar columna
+alter table Tcategoria add observacion varchar(50) // añadir columna
+	
+
+	
