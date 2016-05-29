@@ -30,8 +30,9 @@ public class Docente extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tbl_docente = new javax.swing.JTable();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 153));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Docente"));
+        setPreferredSize(new java.awt.Dimension(400, 250));
 
         jLabel1.setText("Horas: ");
 
@@ -46,7 +47,6 @@ public class Docente extends javax.swing.JPanel {
 
         tbl_docente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
                 {null, null},
                 {null, null},
                 {null, null}
@@ -95,8 +95,8 @@ public class Docente extends javax.swing.JPanel {
                     .addComponent(txt_horas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_procesar))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(57, 57, 57))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -109,7 +109,7 @@ public class Docente extends javax.swing.JPanel {
                    if("".equals(txt_horas.getText()))
         {
             
-     JOptionPane.showMessageDialog(this, "Coloque las horas dictadas.");
+     JOptionPane.showMessageDialog(null, "Coloque las horas dictadas.");
             
      
      

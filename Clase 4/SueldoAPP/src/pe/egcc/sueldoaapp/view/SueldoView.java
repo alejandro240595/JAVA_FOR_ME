@@ -1,6 +1,7 @@
 
 package pe.egcc.sueldoaapp.view;
 
+import java.awt.Color;
 import pe.egcc.sueldoaapp.controller.SueldoController;
 
 
@@ -34,7 +35,7 @@ public class SueldoView extends javax.swing.JFrame {
         
         
         initComponents();
-        
+       
         setLocationRelativeTo(null);
         
         controller = new SueldoController();
@@ -62,11 +63,14 @@ public class SueldoView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sueldo Edutec");
-        setPreferredSize(new java.awt.Dimension(685, 250));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setPreferredSize(new java.awt.Dimension(630, 300));
         setResizable(false);
 
+        Panel_Opciones.setBackground(new java.awt.Color(0, 153, 153));
         Panel_Opciones.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        cbo_tipos.setBackground(new java.awt.Color(0, 102, 102));
         cbo_tipos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbo_tipos.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -80,7 +84,7 @@ public class SueldoView extends javax.swing.JFrame {
         });
 
         jLabel1.setBackground(new java.awt.Color(0, 153, 153));
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 15)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("TIPO DE TRABAJADOR");
 
@@ -105,11 +109,13 @@ public class SueldoView extends javax.swing.JFrame {
                 .addContainerGap(303, Short.MAX_VALUE))
         );
 
+        Panel_trabajadores.setBackground(new java.awt.Color(0, 153, 153));
+
         javax.swing.GroupLayout Panel_trabajadoresLayout = new javax.swing.GroupLayout(Panel_trabajadores);
         Panel_trabajadores.setLayout(Panel_trabajadoresLayout);
         Panel_trabajadoresLayout.setHorizontalGroup(
             Panel_trabajadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 661, Short.MAX_VALUE)
+            .addGap(0, 422, Short.MAX_VALUE)
         );
         Panel_trabajadoresLayout.setVerticalGroup(
             Panel_trabajadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,7 +129,7 @@ public class SueldoView extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Panel_Opciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Panel_trabajadores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(Panel_trabajadores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

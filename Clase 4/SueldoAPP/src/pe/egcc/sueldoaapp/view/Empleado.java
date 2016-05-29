@@ -30,12 +30,13 @@ public class Empleado extends javax.swing.JPanel {
         tbl_empleado = new javax.swing.JTable();
         btn_procesar = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(0, 153, 153));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Empleado"));
+        setPreferredSize(new java.awt.Dimension(400, 250));
+        setVerifyInputWhenFocusTarget(false);
 
         tbl_empleado.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
                 {null, null},
                 {null, null}
             },
@@ -60,6 +61,8 @@ public class Empleado extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tbl_empleado);
 
+        btn_procesar.setBackground(new java.awt.Color(255, 255, 255));
+        btn_procesar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pe/egcc/sueldoaapp/imagen/clouddiscovery-procesamiento-rapido_1.png"))); // NOI18N
         btn_procesar.setText("Procesar:");
         btn_procesar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +79,7 @@ public class Empleado extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn_procesar))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 378, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -84,8 +87,8 @@ public class Empleado extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(btn_procesar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(201, 201, 201))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(235, 235, 235))
         );
     }// </editor-fold>//GEN-END:initComponents
 
