@@ -13,7 +13,7 @@ public class DocenteModel extends ComAbstract
         //Variables
         double  sueldo, bonificacion;
         //proceso
-        sueldo = total*120;
+        sueldo = total*120.0;
         bonificacion= sueldo*Bonificacion_docente;
         
         //salida de datos
