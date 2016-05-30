@@ -27,7 +27,10 @@
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="cbo_ciudad" min="-2" pref="206" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btn_ver" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbo_ciudad" min="-2" pref="206" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace pref="106" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -35,7 +38,9 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <Component id="btn_ver" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cbo_ciudad" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -62,6 +67,14 @@
           </StringArray>
         </Property>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_ver">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ver"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_verActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

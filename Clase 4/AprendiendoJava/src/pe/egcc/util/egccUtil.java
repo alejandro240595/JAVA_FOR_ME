@@ -17,9 +17,25 @@ public final class egccUtil
     public static void LlenaCombo(JComboBox combo, List<ComboDto> valores)   //PARA LLENAR COMBOS
     {
         combo.removeAllItems();
+        ComboDto actual = null;
         for(ComboDto valor : valores )
         {
             combo.addItem(valor);
+            if(valor.isActual())
+            {
+                actual = valor;
+            }
+            
+        }
+        
+        if(actual == null )
+        {
+            combo.setSelectedIndex(-1);
+            
+        }
+        else
+        {
+            combo.setSelectedItem(actual);
         }
     }
     
