@@ -6,4 +6,11 @@ Copia de seguridad -> siempre usar, restaurar(restore) hacer un back up
 
 	Consulta :
 	
-Se visualiza el contenido de una tabla =	select * from nametable
+-Se visualiza el contenido de una tabla :
+	
+	select * from nametable}
+
+
+-insertar registros:
+	
+	insert into TBMARCA values ('01','lg')
