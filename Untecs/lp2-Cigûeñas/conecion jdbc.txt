@@ -1,0 +1,27 @@
+Cambiar autenticacion de conexion
+	
+	-autenticacion de windows  	(local)
+	-autenticacion de sql server	(usuario y clave)
+				donde :	sa	sql
+						123
+
+	descargar driver de conexion JDBC con sql server
+	conectar desde java netbeans
+
+	puerto de conexion ára sql server 1433
+
+	dbo = objeto de bases de datos
+
+	consulta a dos tablas:
+	
+
+	
+	
+
+
+
+
+
+
+
+	

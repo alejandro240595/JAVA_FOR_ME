@@ -14,3 +14,12 @@ Copia de seguridad -> siempre usar, restaurar(restore) hacer un back up
 -insertar registros:
 	
 	insert into TBMARCA values ('01','lg')
+
+-hacer consultas de dos tablas:
+	
+
+	select P.codigo, P.nonbre, P.precio, P.stock, M.nombre // indica que campos iran en la consulta
+	from TMARCA M inner join TPRODUCTO P			// declara variables para las tablas
+	on M.codigo = P.marca					//LA RELACION QUE DESEAS	
+	
+
