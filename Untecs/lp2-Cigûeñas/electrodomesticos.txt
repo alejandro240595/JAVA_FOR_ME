@@ -1,0 +1,21 @@
+codigo tabla electrodomesticos
+
+CREATE TABLE TMARCA
+(codigo varchar(2) primary key,
+ nombre varchar(30) )
+
+ create table TPRODUCTO
+ (	codigo varchar(3) primary key,
+	nonbre varchar(30),
+	precio numeric(8,2),
+	stock int,
+	marca varchar(2))
+
+
+
+relaciones
+
+alter table TPRODUCTO
+add constraint KF_MARCA_CODIGO
+foreign key(marca)
+references TMARCA(codigo)

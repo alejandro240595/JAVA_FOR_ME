@@ -1,0 +1,9 @@
+Adjuntar: (attach) = adjuntar, 
+
+Copia de seguridad -> siempre usar, restaurar(restore) hacer un back up 
+	Nombre de back up BKPrueba11062016
+	
+
+	Consulta :
+	
+Se visualiza el contenido de una tabla =	select * from nametable
